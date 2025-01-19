@@ -1,0 +1,171 @@
+body {
+    background-color: #ffffff;
+    color: #000000;
+    transition: background-color 1s ease, color 1s ease;
+}
+
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+.navbar {
+    transition: background-color 1s ease, color 1s ease;
+}
+
+.navbar.dark-mode {
+    background-color: #1f1f1f;
+}
+
+#home {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+}
+
+#background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    opacity: 1; 
+    transition: opacity 0.5s ease-in-out; 
+}
+
+body.dark-mode #background-video {
+    opacity: 0; 
+}
+
+#home .content h2 {
+    text-shadow: none;
+    color: inherit;
+}
+
+#toggle-dark-mode {
+    border: none;
+    background-color: transparent;
+    color: #fff;
+    transition: color 1s ease;
+}
+
+body.dark-mode #toggle-dark-mode {
+    color: #fff; 
+}
+
+footer {
+    background-color: #1f1f1f;
+    color: #ffffff;
+    transition: background-color 1s ease, color 1s ease;
+}
+
+.service-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 1s ease, color 1s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.service-card img {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+body.dark-mode .service-card {
+    background-color: #1f1f1f;
+    color: #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+body.dark-mode .service-card:hover {
+    background-color: #343a40;
+}
+
+.btn {
+    transition: background-color 1s ease, color 1s ease;
+}
+
+body .btn {
+    background-color: #f8f9fa;
+    color: #000;
+    border: 1px solid #ced4da;
+}
+
+body .btn:hover {
+    background-color: #e9ecef;
+    color: #000;
+}
+
+body.dark-mode .btn {
+    background-color: #343a40;
+    color: #fff;
+    border: 1px solid #495057;
+}
+
+body.dark-mode .btn:hover {
+    background-color: #495057;
+    color: #fff;
+}
+
+:root {
+    --progress-bar-color: #dc143c;
+    --progress-bar-dark-color: #dc143c;
+}
+
+body {
+    background-color: #ffffff;
+    color: #000000;
+    transition: background-color 1s ease, color 1s ease;
+}
+
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+.skill-name {
+    font-weight: bold;
+    font-size: 16px;
+    color: inherit;
+}
+
+.percentage-text {
+    font-weight: bold;
+    font-size: 16px;
+    color: inherit;
+}
+
+.progress {
+    background: #f1f1f1;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 12px;
+    margin-top: 5px;
+    position: relative;
+}
+
+.progress-bar {
+    background: #dc143c !important;
+    height: 100%;
+    text-align: center;
+    border-radius: 10px;
+    transition: width 1.5s ease-in-out, background-color 0.5s ease;
+    position: relative;
+}
+
+body.dark-mode .progress {
+    background: #333;
+}
+
+body.dark-mode .progress-bar {
+    background: #dc143c !important;
+}
